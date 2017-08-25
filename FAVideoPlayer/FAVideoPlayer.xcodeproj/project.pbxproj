@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322B97B21F1D50BA008E34F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322B97B11F1D50BA008E34F6 /* Assets.xcassets */; };
+		3253C9B81F1BB6DF00647143 /* FAVideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253C9B61F1BB6DF00647143 /* FAVideoCollectionViewCell.m */; };
+		3253C9B91F1BB6DF00647143 /* FAVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3253C9B71F1BB6DF00647143 /* FAVideoCollectionViewCell.xib */; };
+		32AB4F961F16825C0082406A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4F951F16825C0082406A /* main.m */; };
+		32AB4F991F16825C0082406A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4F981F16825C0082406A /* AppDelegate.m */; };
+		32AB4F9C1F16825C0082406A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4F9B1F16825C0082406A /* ViewController.m */; };
+		32AB4F9F1F16825C0082406A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AB4F9D1F16825C0082406A /* Main.storyboard */; };
+		32AB4FA41F16825C0082406A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AB4FA21F16825C0082406A /* LaunchScreen.storyboard */; };
+		32AB4FAC1F1683110082406A /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = 32AB4FAB1F1683110082406A /* video.json */; };
+		32AB4FAF1F16833E0082406A /* FAVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4FAE1F16833E0082406A /* FAVideoManager.m */; };
+		32AB4FB21F1684030082406A /* FAVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4FB11F1684030082406A /* FAVideoData.m */; };
+		32AB4FB81F168BBC0082406A /* FAVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB4FB71F168BBC0082406A /* FAVideoPlayerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		322B97B11F1D50BA008E34F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FAVideoPlayer/Assets.xcassets; sourceTree = "<group>"; };
+		3253C9B51F1BB6DF00647143 /* FAVideoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAVideoCollectionViewCell.h; sourceTree = "<group>"; };
+		3253C9B61F1BB6DF00647143 /* FAVideoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAVideoCollectionViewCell.m; sourceTree = "<group>"; };
+		3253C9B71F1BB6DF00647143 /* FAVideoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		32AB4F911F16825C0082406A /* FAVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AB4F951F16825C0082406A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32AB4F971F16825C0082406A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32AB4F981F16825C0082406A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32AB4F9A1F16825C0082406A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32AB4F9B1F16825C0082406A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32AB4F9E1F16825C0082406A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32AB4FA31F16825C0082406A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32AB4FA51F16825C0082406A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AB4FAB1F1683110082406A /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		32AB4FAD1F16833E0082406A /* FAVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAVideoManager.h; sourceTree = "<group>"; };
+		32AB4FAE1F16833E0082406A /* FAVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAVideoManager.m; sourceTree = "<group>"; };
+		32AB4FB01F1684030082406A /* FAVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAVideoData.h; sourceTree = "<group>"; };
+		32AB4FB11F1684030082406A /* FAVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAVideoData.m; sourceTree = "<group>"; };
+		32AB4FB61F168BBC0082406A /* FAVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAVideoPlayerView.h; sourceTree = "<group>"; };
+		32AB4FB71F168BBC0082406A /* FAVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAVideoPlayerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32AB4F8E1F16825C0082406A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32AB4F881F16825C0082406A = {
+			isa = PBXGroup;
+			children = (
+				322B97B11F1D50BA008E34F6 /* Assets.xcassets */,
+				32AB4F931F16825C0082406A /* FAVideoPlayer */,
+				32AB4F921F16825C0082406A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32AB4F921F16825C0082406A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32AB4F911F16825C0082406A /* FAVideoPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32AB4F931F16825C0082406A /* FAVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				32AB4F971F16825C0082406A /* AppDelegate.h */,
+				32AB4F981F16825C0082406A /* AppDelegate.m */,
+				32AB4F9A1F16825C0082406A /* ViewController.h */,
+				32AB4F9B1F16825C0082406A /* ViewController.m */,
+				32AB4FAB1F1683110082406A /* video.json */,
+				32AB4F9D1F16825C0082406A /* Main.storyboard */,
+				32AB4FA21F16825C0082406A /* LaunchScreen.storyboard */,
+				32AB4FA51F16825C0082406A /* Info.plist */,
+				32AB4F941F16825C0082406A /* Supporting Files */,
+				32AB4FAD1F16833E0082406A /* FAVideoManager.h */,
+				32AB4FAE1F16833E0082406A /* FAVideoManager.m */,
+				32AB4FB01F1684030082406A /* FAVideoData.h */,
+				32AB4FB11F1684030082406A /* FAVideoData.m */,
+				32AB4FB61F168BBC0082406A /* FAVideoPlayerView.h */,
+				32AB4FB71F168BBC0082406A /* FAVideoPlayerView.m */,
+				3253C9B51F1BB6DF00647143 /* FAVideoCollectionViewCell.h */,
+				3253C9B61F1BB6DF00647143 /* FAVideoCollectionViewCell.m */,
+				3253C9B71F1BB6DF00647143 /* FAVideoCollectionViewCell.xib */,
+			);
+			path = FAVideoPlayer;
+			sourceTree = "<group>";
+		};
+		32AB4F941F16825C0082406A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32AB4F951F16825C0082406A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32AB4F901F16825C0082406A /* FAVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AB4FA81F16825C0082406A /* Build configuration list for PBXNativeTarget "FAVideoPlayer" */;
+			buildPhases = (
+				32AB4F8D1F16825C0082406A /* Sources */,
+				32AB4F8E1F16825C0082406A /* Frameworks */,
+				32AB4F8F1F16825C0082406A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAVideoPlayer;
+			productName = FAVideoPlayer;
+			productReference = 32AB4F911F16825C0082406A /* FAVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32AB4F891F16825C0082406A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ajay Rawat";
+				TargetAttributes = {
+					32AB4F901F16825C0082406A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XRHPMVSW8A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 32AB4F8C1F16825C0082406A /* Build configuration list for PBXProject "FAVideoPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32AB4F881F16825C0082406A;
+			productRefGroup = 32AB4F921F16825C0082406A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32AB4F901F16825C0082406A /* FAVideoPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32AB4F8F1F16825C0082406A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3253C9B91F1BB6DF00647143 /* FAVideoCollectionViewCell.xib in Resources */,
+				32AB4FA41F16825C0082406A /* LaunchScreen.storyboard in Resources */,
+				32AB4FAC1F1683110082406A /* video.json in Resources */,
+				32AB4F9F1F16825C0082406A /* Main.storyboard in Resources */,
+				322B97B21F1D50BA008E34F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32AB4F8D1F16825C0082406A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AB4FB21F1684030082406A /* FAVideoData.m in Sources */,
+				32AB4FAF1F16833E0082406A /* FAVideoManager.m in Sources */,
+				32AB4FB81F168BBC0082406A /* FAVideoPlayerView.m in Sources */,
+				3253C9B81F1BB6DF00647143 /* FAVideoCollectionViewCell.m in Sources */,
+				32AB4F9C1F16825C0082406A /* ViewController.m in Sources */,
+				32AB4F991F16825C0082406A /* AppDelegate.m in Sources */,
+				32AB4F961F16825C0082406A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32AB4F9D1F16825C0082406A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AB4F9E1F16825C0082406A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32AB4FA21F16825C0082406A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AB4FA31F16825C0082406A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32AB4FA61F16825C0082406A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32AB4FA71F16825C0082406A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32AB4FA91F16825C0082406A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XRHPMVSW8A;
+				INFOPLIST_FILE = FAVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..FAVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32AB4FAA1F16825C0082406A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XRHPMVSW8A;
+				INFOPLIST_FILE = FAVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..FAVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32AB4F8C1F16825C0082406A /* Build configuration list for PBXProject "FAVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AB4FA61F16825C0082406A /* Debug */,
+				32AB4FA71F16825C0082406A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AB4FA81F16825C0082406A /* Build configuration list for PBXNativeTarget "FAVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AB4FA91F16825C0082406A /* Debug */,
+				32AB4FAA1F16825C0082406A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32AB4F891F16825C0082406A /* Project object */;
+}

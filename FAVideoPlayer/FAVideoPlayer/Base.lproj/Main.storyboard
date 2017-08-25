@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-7F-GpW">
+                                <rect key="frame" x="0.0" y="28" width="320" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="REo-oI-r70">
+                                    <size key="itemSize" width="319" height="426"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="veM-HH-BDX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aBk-94-k93"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-mD-Crf">
+                                <rect key="frame" x="16" y="442" width="47" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="McA-mH-pJU"/>
+                                    <constraint firstAttribute="width" constant="47" id="xrU-wu-N4K"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="PauseButton"/>
+                                <connections>
+                                    <action selector="togglePlayBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLJ-vL-FNW"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tbg-hZ-Gbm">
+                                <rect key="frame" x="84" y="446" width="230" height="31"/>
+                                <connections>
+                                    <action selector="timeSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="jA6-Oj-f7D"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-Ml-2n8">
+                                <rect key="frame" x="270" y="424" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH0-Pe-Dwt">
+                                <rect key="frame" x="86" y="424" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tbg-hZ-Gbm" firstAttribute="leading" secondItem="pdU-mD-Crf" secondAttribute="trailing" constant="23" id="5Do-fR-TXN"/>
+                            <constraint firstAttribute="trailing" secondItem="OF0-7F-GpW" secondAttribute="trailing" id="7iJ-g5-fa3"/>
+                            <constraint firstAttribute="trailing" secondItem="tbg-hZ-Gbm" secondAttribute="trailing" constant="8" id="Dv2-lb-ULS"/>
+                            <constraint firstItem="tbg-hZ-Gbm" firstAttribute="top" secondItem="NH0-Pe-Dwt" secondAttribute="bottom" constant="1" id="JNF-m3-dcy"/>
+                            <constraint firstItem="tbg-hZ-Gbm" firstAttribute="top" secondItem="gpL-Ml-2n8" secondAttribute="bottom" constant="1" id="JfW-HQ-zSC"/>
+                            <constraint firstItem="gpL-Ml-2n8" firstAttribute="top" secondItem="OF0-7F-GpW" secondAttribute="bottom" id="Mzf-KS-kgD"/>
+                            <constraint firstItem="NH0-Pe-Dwt" firstAttribute="top" secondItem="OF0-7F-GpW" secondAttribute="bottom" id="UE9-q4-9h1"/>
+                            <constraint firstItem="pdU-mD-Crf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UT1-I3-czv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pdU-mD-Crf" secondAttribute="bottom" constant="8" id="X49-dw-3lB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tbg-hZ-Gbm" secondAttribute="bottom" constant="4" id="d2i-AS-TKA"/>
+                            <constraint firstItem="pdU-mD-Crf" firstAttribute="top" secondItem="OF0-7F-GpW" secondAttribute="bottom" constant="18" id="e0m-TT-JjU"/>
+                            <constraint firstAttribute="trailing" secondItem="gpL-Ml-2n8" secondAttribute="trailing" constant="8" id="f9U-Z4-uYq"/>
+                            <constraint firstItem="NH0-Pe-Dwt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="pND-7D-iwU"/>
+                            <constraint firstItem="OF0-7F-GpW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vCR-b4-l19"/>
+                            <constraint firstItem="OF0-7F-GpW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zef-Rk-ExF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="OF0-7F-GpW" id="wB4-WW-1up"/>
+                        <outlet property="endTimeLabel" destination="gpL-Ml-2n8" id="3V5-3a-zGU"/>
+                        <outlet property="startLabel" destination="NH0-Pe-Dwt" id="lMU-Yo-mST"/>
+                        <outlet property="timeSlider" destination="tbg-hZ-Gbm" id="kgu-uT-0rg"/>
+                        <outlet property="toggleButton" destination="pdU-mD-Crf" id="Gbw-N9-C3P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663.75" y="-276.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PauseButton" width="18" height="22"/>
+    </resources>
+</document>
